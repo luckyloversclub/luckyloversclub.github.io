@@ -1,0 +1,222 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.element-center {
+    justify-content: center; 
+    text-align: center; 
+}
+
+.fullwidth {
+    width: 100%;
+    height: 200px;
+}
+
+.originalroll20 {
+    width: 100%;
+    height: 200px;
+    word-break: break-all;
+    overflow-y: auto;
+    overflow-x: hidden;
+    cursor: text;
+    border: 1px solid black;
+    white-space: pre-wrap;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.loading-container {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    position: relative;
+    margin-top: 10px;
+    display: none;
+}
+
+.loading-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #007bff;
+    transition: width 0.5s ease-in-out;
+}
+
+.wrap {
+    padding: 10px;
+    min-height: 200px;
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    overflow-x: hidden; 
+    overflow-y: auto;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.message {
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.message .spacer {
+    margin-bottom: 7px;
+}
+
+.message.desc {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message.general {
+    padding-left: 45px;
+}
+
+.message .avatar {
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 28px;
+}
+
+.message .avatar img {
+    max-width: 28px;
+    height: auto;
+    max-height: 28px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.message .by {
+    font-weight: bold;
+    position: relative;
+    left: -5px;
+}
+
+.message .flyout {
+    position: absolute;
+    cursor: pointer;
+    height: 24px;
+    width: 2px;
+    right: 10px;
+    top: 0;
+}
+
+/* Table styles */
+.sheet-rolltemplate-coc-1 table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    background: #ffffff;
+    width: 100%;
+    border: 1px solid black;
+    color: black;
+}
+
+.sheet-rolltemplate-coc-1 caption {
+    color: white;
+    background: black;
+    font-weight: bold;
+    border: 1px solid black;
+    line-height: 1.6em;
+}
+
+.sheet-rolltemplate-coc-1 td {
+    border-bottom: 1px solid black;
+}
+
+.sheet-rolltemplate-coc-1 .sheet-template_label {
+    font-weight: bold;
+}
+
+.sheet-rolltemplate-coc-1 .sheet-template_value {
+    text-align: center;
+}
+
+.sheet-rolltemplate-coc-1 .inlinerollresult {
+    background: #bebebe;
+    border: 2px solid black;
+    font-weight: bold;
+    cursor: help;
+    font-size: 1.1em;
+    display: inline-block;
+    min-width: 1.5em;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#copyMessage {
+    margin-left: 10px;
+    color: #4CAF50;
+}
+
+#loadingText {
+    color: blue;
+    margin-left: 10px;
+}
+
+/* Remove any extra spacing between messages */
+.message + .message {
+    margin-top: 0;
+}
+
+/* Ensure images maintain aspect ratio */
+.message img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.desc {
+
+}
+
+.you {
+
+}
+
+.general {
+    
+}
+
+.button-container {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#output {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    margin: 10px 0;
+}
+
+.output-container {
+    margin-top: 20px;
+}

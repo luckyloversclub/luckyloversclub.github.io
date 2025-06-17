@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롤20 채팅 로그 변환기</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="element-center">
+        <h1>롤20 채팅 로그 변환기</h1>
+        <!--
+        <img src="images/clover.gif">
+        <div>
+            <a href="https://kre.pe/4f1q" target="_blank" style="text-decoration:none;">©️E님</a>
+        </div>
+        -->
+    </br>
+        <div>
+            <a href="howToUse.html">사용법</a>
+        </div>
+    </div>
+    
+    <div style="padding:30px; max-width: 800px; margin: 0 auto;">
+        
+        <p>롤20의 채팅 로그를 아래 박스에 붙여넣으신 후 변환하기 버튼을 클릭하세요.</p>
+        
+        <textarea class="originalroll20" id="editableBox" placeholder="여기에 롤20 채팅 로그를 붙여넣으세요..."></textarea>
+        
+        <div class="button-group">
+            <button id="readButton">변환하기</button>
+            <span id="loadingText" style="display: none; margin-left: 10px; color:blue;">변환중...</span>
+        </div>
+
+        <div id="imageReplacements" style="display: none;">
+            <h3>아이콘 변경</h3>
+            <div id="imageReplacementList"></div>
+            <div style="margin-top: 10px;">
+                <button id="changeAllIcons">아이콘 변경하기</button>
+            </div>
+        </div>
+        
+        <div class="output-container">
+            <h3>변환된 결과:</h3>
+            <div id="output"></div>
+            <div class="button-group">
+                <button id="copyButton">복사하기</button>
+                <span id="copyMessage" style="display:none; color:blue;">복사 완료!</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
